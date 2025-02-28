@@ -51,8 +51,11 @@ body {
         align-items: center;
 
         #logo {
-            max-width: 200px;
-            margin: 0.5rem 0;
+            img {
+                width: 100%;
+                max-width: 200px;
+                margin: 0.5rem 0;
+            }
         }
 
         nav {
@@ -84,6 +87,24 @@ body {
                 }
             }
         }
+
+        #social {
+            margin: 0.5rem 0;
+            
+            a {
+                margin-right: 0.5rem;
+                text-decoration: none;
+                
+                img {
+                    width: 100%;
+                    max-width: 25px;
+                }
+            }
+
+            a:last-child {
+                margin-right: 0;
+            }
+        }
     }
   }
 
@@ -103,6 +124,7 @@ body {
 
         #header {
             padding: 1rem 4rem;
+            flex-direction: row;
             justify-content: space-between;
         }
     }
@@ -110,8 +132,14 @@ body {
 
   @media (min-width: 1200px) {
     header {
-        #header {
-            flex-direction: row;
+        #header > #logo,
+        #header > nav,
+        #header > #social {
+            width: 33.3333%;
+        }
+
+        #header > #social {
+            text-align: right;
         }
     }
   }

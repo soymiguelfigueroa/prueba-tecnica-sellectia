@@ -38,7 +38,8 @@ body header #header {
   justify-content: center;
   align-items: center;
 }
-body header #header #logo {
+body header #header #logo img {
+  width: 100%;
   max-width: 200px;
   margin: 0.5rem 0;
 }
@@ -66,6 +67,20 @@ body header #header nav ul li a:hover {
 body header #header nav ul li:last-child {
   margin-right: 0;
 }
+body header #header #social {
+  margin: 0.5rem 0;
+}
+body header #header #social a {
+  margin-right: 0.5rem;
+  text-decoration: none;
+}
+body header #header #social a img {
+  width: 100%;
+  max-width: 25px;
+}
+body header #header #social a:last-child {
+  margin-right: 0;
+}
 @media (min-width: 768px) {
   body header #preheader p {
     flex-direction: row;
@@ -77,12 +92,18 @@ body header #header nav ul li:last-child {
   }
   body header #header {
     padding: 1rem 4rem;
+    flex-direction: row;
     justify-content: space-between;
   }
 }
 @media (min-width: 1200px) {
-  body header #header {
-    flex-direction: row;
+  body header #header > #logo,
+  body header #header > nav,
+  body header #header > #social {
+    width: 33.3333%;
+  }
+  body header #header > #social {
+    text-align: right;
   }
 }
 
