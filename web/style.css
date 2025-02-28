@@ -83,6 +83,39 @@ body header #header #social a img {
 body header #header #social a:last-child {
   margin-right: 0;
 }
+body main #slider .swiper {
+  width: 100%;
+  height: 600px;
+}
+body main #slider .swiper .swiper-slide {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body main #slider .swiper .swiper-slide .content {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  background: rgb(226, 0, 26);
+  background: linear-gradient(90deg, rgb(226, 0, 26) 0%, rgba(255, 255, 255, 0.1) 70%);
+}
+body main #slider .swiper .swiper-slide .content h2 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  max-width: 50%;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+body main #slider .swiper .swiper-pagination .swiper-pagination-bullet {
+  border: 1px solid #fff;
+  background: transparent;
+  opacity: 1;
+  margin: 0 1rem;
+}
+body main #slider .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #fff;
+}
 @media (min-width: 768px) {
   body header #preheader p {
     flex-direction: row;
@@ -97,6 +130,18 @@ body header #header #social a:last-child {
     flex-direction: row;
     justify-content: space-between;
   }
+  body main #slider .swiper .swiper-slide .content {
+    background: linear-gradient(90deg, rgb(226, 0, 26) 0%, rgba(255, 255, 255, 0.1) 60%);
+  }
+  body main #slider .swiper .swiper-slide .content h2 {
+    max-width: 40%;
+    margin-bottom: 4rem;
+    margin-left: 4rem;
+  }
+  body main #slider .swiper .swiper-pagination .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+  }
 }
 @media (min-width: 1200px) {
   body header #header > #logo,
@@ -106,6 +151,12 @@ body header #header #social a:last-child {
   }
   body header #header > #social {
     text-align: right;
+  }
+  body main #slider .swiper .swiper-slide .content {
+    background: linear-gradient(90deg, rgb(226, 0, 26) 0%, rgba(255, 255, 255, 0.1) 50%);
+  }
+  body main #slider .swiper .swiper-slide .content h2 {
+    max-width: 20%;
   }
 }
 

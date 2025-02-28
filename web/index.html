@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Custom css -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -41,7 +43,34 @@
         </section>
     </header>
     <main>
-        <section id="slider"></section>
+        <section id="slider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url('/assets/slider/slide1.webp');">
+                        <div class="content">
+                            <h2>A veces, somos gente normal</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('/assets/slider/slide2.webp');">
+                        <div class="content">
+                            <h2>A veces, somos gente normal</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('/assets/slider/slide3.webp');">
+                        <div class="content">
+                            <h2>A veces, somos gente normal</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('/assets/slider/slide4.webp');">
+                        <div class="content">
+                            <h2>A veces, somos gente normal</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
         <section id="notostros"></section>
         <section id="servicios"></section>
         <section id="proyectos"></section>
@@ -52,5 +81,8 @@
         <section id="footer"></section>
         <section id="postfooter"></section>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
