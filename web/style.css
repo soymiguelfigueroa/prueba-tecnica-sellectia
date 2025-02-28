@@ -1,0 +1,45 @@
+body {
+  font: 100% Outfit, sans-serif;
+  color: #001c3a;
+  margin: 0;
+}
+body p {
+  margin: 0;
+}
+body .light {
+  font-weight: 300;
+}
+body .bold {
+  font-weight: bold;
+}
+body header #preheader {
+  background-color: #e2001a;
+}
+body header #preheader p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 1rem 0;
+}
+body header #preheader p span {
+  margin-bottom: 0.5rem;
+}
+body header #preheader p a {
+  color: #fff;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+@media (min-width: 768px) {
+  body header #preheader p {
+    flex-direction: row;
+    justify-content: center;
+  }
+  body header #preheader p span {
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,62 @@
+$font-stack: Outfit, sans-serif;
+$primary-color: #001c3a;
+$secondary-color: #e2001a;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  margin: 0;
+
+  p {
+    margin: 0;
+  }
+
+  .light {
+    font-weight: 300;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  header {
+    #preheader {
+        background-color: $secondary-color;
+
+        p {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 1rem 0;
+
+            span {
+                margin-bottom: 0.5rem;
+            }
+
+            a {
+                color: #fff;
+                text-decoration: underline;
+                text-transform: capitalize;
+            }
+        }
+    }
+  }
+
+  @media (min-width: 768px) {
+    header {
+        #preheader {
+            p {
+                flex-direction: row;
+                justify-content: center;
+
+                span {
+                    margin-right: 0.5rem;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+  }
+}
