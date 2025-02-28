@@ -31,6 +31,15 @@ body header #preheader p a {
   text-decoration: underline;
   text-transform: capitalize;
 }
+body header #header {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header #header #logo {
+  max-width: 200px;
+}
 @media (min-width: 768px) {
   body header #preheader p {
     flex-direction: row;
@@ -39,6 +48,10 @@ body header #preheader p a {
   body header #preheader p span {
     margin-right: 0.5rem;
     margin-bottom: 0;
+  }
+  body header #header {
+    padding: 1rem 4rem;
+    justify-content: space-between;
   }
 }
 
