@@ -38,10 +38,12 @@ body header #header {
   justify-content: center;
   align-items: center;
 }
+body header #header #logo {
+  margin: 0.5rem 0;
+}
 body header #header #logo img {
   width: 100%;
   max-width: 200px;
-  margin: 0.5rem 0;
 }
 body header #header nav {
   margin: 0.5rem 0;
