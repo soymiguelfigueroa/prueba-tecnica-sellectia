@@ -46,11 +46,43 @@ body {
     #header {
         padding: 1rem;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
         #logo {
             max-width: 200px;
+            margin: 0.5rem 0;
+        }
+
+        nav {
+            margin: 0.5rem 0;
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    margin-right: 0.5rem;
+
+                    a {
+                        color: $secondary-color;
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                li:last-child {
+                    margin-right: 0;
+                }
+            }
         }
     }
   }
@@ -72,6 +104,14 @@ body {
         #header {
             padding: 1rem 4rem;
             justify-content: space-between;
+        }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    header {
+        #header {
+            flex-direction: row;
         }
     }
   }

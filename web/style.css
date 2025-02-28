@@ -34,11 +34,37 @@ body header #preheader p a {
 body header #header {
   padding: 1rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 body header #header #logo {
   max-width: 200px;
+  margin: 0.5rem 0;
+}
+body header #header nav {
+  margin: 0.5rem 0;
+}
+body header #header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body header #header nav ul li {
+  margin-right: 0.5rem;
+}
+body header #header nav ul li a {
+  color: #e2001a;
+  text-decoration: none;
+}
+body header #header nav ul li a:hover {
+  text-decoration: underline;
+}
+body header #header nav ul li:last-child {
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   body header #preheader p {
@@ -52,6 +78,11 @@ body header #header #logo {
   body header #header {
     padding: 1rem 4rem;
     justify-content: space-between;
+  }
+}
+@media (min-width: 1200px) {
+  body header #header {
+    flex-direction: row;
   }
 }
 
