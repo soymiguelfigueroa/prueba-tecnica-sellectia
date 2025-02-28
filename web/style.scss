@@ -151,6 +151,20 @@ body {
                 }
             }
         }
+
+        #scrolldown {
+            margin: 1rem 0;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+
+                img {
+                    width: 100%;
+                    max-width: 50px;
+                }
+            }
+        }
     }
 
     @media (min-width: 768px) {

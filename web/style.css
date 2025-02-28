@@ -116,6 +116,17 @@ body main #slider .swiper .swiper-pagination .swiper-pagination-bullet {
 body main #slider .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #fff;
 }
+body main #scrolldown {
+  margin: 1rem 0;
+  text-align: center;
+}
+body main #scrolldown a {
+  text-decoration: none;
+}
+body main #scrolldown a img {
+  width: 100%;
+  max-width: 50px;
+}
 @media (min-width: 768px) {
   body header #preheader p {
     flex-direction: row;
