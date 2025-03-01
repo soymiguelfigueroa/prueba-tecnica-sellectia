@@ -11,5 +11,5 @@ $formulario_contacto.addEventListener('submit', function(event) {
   event.preventDefault();
   event.stopImmediatePropagation();
   
-  alert('Mensaje enviado correctamente');
+  alert('Gracias por contactarnos, te responderemos a la brevedad');
 });
