@@ -6,7 +6,7 @@ Este proyecto es una prueba técnica para Sellectia. El objetivo es demostrar ha
 ## Componentes del Proyecto
 
 ### 1. Frontend
-El frontend está desarrollado utilizando [especificar tecnología, por ejemplo, React, Angular, etc.]. Incluye las siguientes características:
+El frontend está desarrollado utilizando HTML, CSS (utilizando SASS como preprocesador) y JS. Incluye las siguientes características:
 - **assets**: Recursos gráficos del proyecto
 - **index.html**: Archivo de estructura del proyecto
 - **script.js**: En este archivo se gestiona la inicialización del slider, el procesado del formulario y la inicialización de la librería AOS
