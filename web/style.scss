@@ -527,6 +527,27 @@ body {
                     grid-template-columns: repeat(2, 1fr);
                 }
             }
+
+            #contacto {
+                form {
+                    .column:first-child {
+                        display: flex;
+                        flex-wrap: wrap;
+                        height: fit-content;
+        
+                        input[type="text"],
+                        input[type="email"],
+                        input[type="tel"] {
+                            width: calc(50% - 40px);
+                            height: fit-content;
+                        }
+        
+                        textarea {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
         }
 
         footer {
@@ -627,23 +648,6 @@ body {
                     column-gap: 4rem;
                     max-width: 1200px;
                     margin: 0 auto;
-
-                    .column:first-child {
-                        display: flex;
-                        flex-wrap: wrap;
-                        height: fit-content;
-
-                        input[type="text"],
-                        input[type="email"],
-                        input[type="tel"] {
-                            width: calc(50% - 40px);
-                            height: fit-content;
-                        }
-
-                        textarea {
-                            width: 100%;
-                        }
-                    }
 
                     .column:last-child {
                         .wrapper {

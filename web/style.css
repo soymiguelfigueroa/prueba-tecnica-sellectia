@@ -420,6 +420,20 @@ body footer #prefooter p a {
   body main #proyectos .clientes {
     grid-template-columns: repeat(2, 1fr);
   }
+  body main #contacto form .column:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  body main #contacto form .column:first-child input[type=text],
+  body main #contacto form .column:first-child input[type=email],
+  body main #contacto form .column:first-child input[type=tel] {
+    width: calc(50% - 40px);
+    height: fit-content;
+  }
+  body main #contacto form .column:first-child textarea {
+    width: 100%;
+  }
   body footer #prefooter p {
     flex-direction: row;
     justify-content: center;
@@ -487,20 +501,6 @@ body footer #prefooter p a {
     column-gap: 4rem;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  body main #contacto form .column:first-child {
-    display: flex;
-    flex-wrap: wrap;
-    height: fit-content;
-  }
-  body main #contacto form .column:first-child input[type=text],
-  body main #contacto form .column:first-child input[type=email],
-  body main #contacto form .column:first-child input[type=tel] {
-    width: calc(50% - 40px);
-    height: fit-content;
-  }
-  body main #contacto form .column:first-child textarea {
-    width: 100%;
   }
   body main #contacto form .column:last-child .wrapper {
     flex-direction: row;
