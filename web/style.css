@@ -393,6 +393,7 @@ body footer #footer .column p a {
   color: #fff;
   text-decoration: none;
   font-size: 0.9rem;
+  text-transform: uppercase;
 }
 body footer #footer .column #pago-seguro {
   color: #fff;
@@ -413,6 +414,7 @@ body footer #footer .column ul li {
 body footer #footer .column ul li a {
   color: #fff;
   text-decoration: none;
+  text-transform: uppercase;
 }
 body footer #footer .column .social {
   margin: 0.5rem 0;
