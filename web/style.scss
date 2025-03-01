@@ -2,7 +2,7 @@ $font-stack: Outfit, sans-serif;
 $primary-color: #001c3a;
 $secondary-color: #e2001a;
 $white-color: #fff;
-$black-color: #000;
+$blue-color: #001c39;
 
 body {
     font: 100% $font-stack;
@@ -207,14 +207,14 @@ body {
                 }
     
                 .title {
-                    color: $black-color;
+                    color: $blue-color;
                     font-weight: bold;
                     text-transform: uppercase;
                     margin-top: 0;
                 }
     
                 .description {
-                    color: $black-color;
+                    color: $blue-color;
                     font-weight: 300;
                 }
             }

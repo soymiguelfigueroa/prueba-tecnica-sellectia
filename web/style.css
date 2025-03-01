@@ -162,13 +162,13 @@ body main #nosotros article .number {
   font-weight: bold;
 }
 body main #nosotros article .title {
-  color: #000;
+  color: #001c39;
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 0;
 }
 body main #nosotros article .description {
-  color: #000;
+  color: #001c39;
   font-weight: 300;
 }
 @media (min-width: 768px) {
