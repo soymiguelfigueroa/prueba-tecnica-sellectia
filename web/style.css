@@ -360,6 +360,25 @@ body main #contacto form .column .wrapper button[type=submit] {
   border-radius: 20px;
   cursor: pointer;
 }
+body footer #prefooter {
+  background-color: #fff;
+}
+body footer #prefooter p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e2001a;
+  text-transform: uppercase;
+  padding: 1rem 0;
+}
+body footer #prefooter p span {
+  margin-bottom: 0.5rem;
+}
+body footer #prefooter p a {
+  color: #e2001a;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
 @media (min-width: 768px) {
   body header #preheader p {
     flex-direction: row;
@@ -400,6 +419,14 @@ body main #contacto form .column .wrapper button[type=submit] {
   }
   body main #proyectos .clientes {
     grid-template-columns: repeat(2, 1fr);
+  }
+  body footer #prefooter p {
+    flex-direction: row;
+    justify-content: center;
+  }
+  body footer #prefooter p span {
+    margin-right: 0.5rem;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1200px) {

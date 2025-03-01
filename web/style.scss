@@ -439,6 +439,31 @@ body {
         }
     }
 
+    footer {
+        #prefooter {
+            background-color: $white-color;
+
+            p {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: $secondary-color;
+                text-transform: uppercase;
+                padding: 1rem 0;
+
+                span {
+                    margin-bottom: 0.5rem;
+                }
+
+                a {
+                    color: $secondary-color;
+                    text-decoration: underline;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+
     @media (min-width: 768px) {
         header {
             #preheader {
@@ -503,11 +528,24 @@ body {
                 }
             }
         }
+
+        footer {
+            #prefooter {
+                p {
+                    flex-direction: row;
+                    justify-content: center;
+
+                    span {
+                        margin-right: 0.5rem;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
     }
 
     @media (min-width: 1200px) {
         header {
-
             #header>#logo,
             #header>nav,
             #header>#social {
