@@ -219,6 +219,33 @@ body {
                 }
             }
         }
+
+        #servicios {
+            height: 400px;
+            background: linear-gradient(to bottom, $white-color 25%, $blue-color 25% 70%, #e2001a55 70%, $secondary-color);
+            text-align: center;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+
+            img {
+                max-width: 50%;
+            }
+
+            h2 {
+                color: $white-color;
+                font-size: 2rem;
+                font-weight: bold;
+                margin: 0;
+                text-transform: uppercase;
+            }
+
+            img,
+            h2 {
+                grid-column: 1 / 1;
+                grid-row: 1 / 1;
+            }
+        }
     }
 
     @media (min-width: 768px) {
@@ -269,6 +296,15 @@ body {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 2rem;
             }
+
+            #servicios {
+                height: 85vh;
+
+                h2 {
+                    letter-spacing: 0.5rem;
+                    margin-top: 100px;
+                }
+            }
         }
     }
 
@@ -304,6 +340,12 @@ body {
             #nosotros {
                 max-width: 1024px;
                 margin: 0 auto;
+            }
+
+            #servicios {
+                img {
+                    max-width: 30%;
+                }
             }
         }
     }

@@ -171,6 +171,29 @@ body main #nosotros article .description {
   color: #001c39;
   font-weight: 300;
 }
+body main #servicios {
+  height: 400px;
+  background: linear-gradient(to bottom, #fff 25%, #001c39 25% 70%, rgba(226, 0, 26, 0.3333333333) 70%, #e2001a);
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+body main #servicios img {
+  max-width: 50%;
+}
+body main #servicios h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+}
+body main #servicios img,
+body main #servicios h2 {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
 @media (min-width: 768px) {
   body header #preheader p {
     flex-direction: row;
@@ -202,6 +225,13 @@ body main #nosotros article .description {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
+  body main #servicios {
+    height: 85vh;
+  }
+  body main #servicios h2 {
+    letter-spacing: 0.5rem;
+    margin-top: 100px;
+  }
 }
 @media (min-width: 1200px) {
   body header #header > #logo,
@@ -221,6 +251,9 @@ body main #nosotros article .description {
   body main #nosotros {
     max-width: 1024px;
     margin: 0 auto;
+  }
+  body main #servicios img {
+    max-width: 30%;
   }
 }
 
