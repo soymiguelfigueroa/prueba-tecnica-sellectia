@@ -13,3 +13,5 @@ $formulario_contacto.addEventListener('submit', function(event) {
   
   alert('Gracias por contactarnos, te responderemos a la brevedad');
 });
+
+AOS.init();

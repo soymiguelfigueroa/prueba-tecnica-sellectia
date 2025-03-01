@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom css -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -77,7 +79,7 @@
             </a>
         </section>
         <section id="nosotros">
-            <article>
+            <article data-aos="fade-right">
                 <div class="nosotros-wrapper_image" style="background-image: url(/assets/nosotros/fondo/01-creatividad.jpg);">
                     <div class="overlay">
                         <img src="/assets/nosotros/icono/01-creatividad.svg" alt="Ícono de creatividad sin límites para impulsar tu marca" class="icono">
@@ -87,7 +89,7 @@
                 <h2 class="title">Creatividad sin límites para impulsar tu marca</h2>
                 <p class="description">Transformamos ideas en <strong>experiencias inolvidables</strong>, creando campañas que capturan la esencia de tu marca y resuenan profundamente con tu audiencia.</p>
             </article>
-            <article>
+            <article data-aos="fade-left">
                 <div class="nosotros-wrapper_image" style="background-image: url(/assets/nosotros/fondo/02-agilidad.jpg);">
                     <div class="overlay">
                         <img src="/assets/nosotros/icono/02-agilidad.svg" alt="Ícono de agilidad y eficiencia en cada proyecto" class="icono">
@@ -97,7 +99,7 @@
                 <h2 class="title">Agilidad y eficiencia en cada proyecto</h2>
                 <p class="description"><strong>Respuesta rápida y eficiente</strong> para un mercado en constante cambio, adaptándonos a tus necesidades y superando tus expectativas con cada entrega.</p>
             </article>
-            <article>
+            <article data-aos="fade-right">
                 <div class="nosotros-wrapper_image" style="background-image: url(/assets/nosotros/fondo/03-tecnologia.jpg);">
                     <div class="overlay">
                         <img src="/assets/nosotros/icono/03-tecnologia.svg" alt="Ícono de tecnología para resultados óptimos" class="icono">
@@ -107,7 +109,7 @@
                 <h2 class="title">Tecnología para resultados óptimos</h2>
                 <p class="description">Innovación tecnológica para potenciar tus campañas publicitarias, utilizando <strong>las herramientas más avanzadas</strong> para alcanzar y superar tus objetivos.</p>
             </article>
-            <article>
+            <article data-aos="fade-left">
                 <div class="nosotros-wrapper_image" style="background-image: url(/assets/nosotros/fondo/04-equipo.jpg);">
                     <div class="overlay">
                         <img src="/assets/nosotros/icono/04-equipo.svg" alt="Ícono de equipo de expertos apasionados y dedicados" class="icono">
@@ -119,46 +121,46 @@
             </article>
         </section>
         <section id="servicios">
-            <img src="/assets/servicios.png" alt="Imágen de servicios">
-            <h2>Vendemos humo con mucha pasión</h2>
+            <img src="/assets/servicios.png" alt="Imágen de servicios" data-aos="flip-left">
+            <h2 data-aos="fade-up">Vendemos humo con mucha pasión</h2>
         </section>
         <section id="proyectos">
             <h2>¿Nuestros clientes?</h2>
             <div class="clientes">
-                <div class="cliente">
+                <div class="cliente" data-aos="zoom-in-up">
                     <img src="/assets/clientes/01-alcampo.svg" alt="Alcampo">
                 </div>
-                <div class="cliente">
+                <div class="cliente" data-aos="zoom-in-up">
                     <img src="/assets/clientes/02-basf.svg" alt="basf">
                 </div>
-                <div class="cliente">
+                <div class="cliente" data-aos="zoom-in-up">
                     <img src="/assets/clientes/03-ferrovial.svg" alt="Ferrovial">
                 </div>
-                <div class="cliente">
+                <div class="cliente" data-aos="zoom-in-up">
                     <img src="/assets/clientes/04-kpmg.svg" alt="kpmg">
                 </div>
-                <div class="cliente">
+                <div class="cliente" data-aos="zoom-in-up">
                     <img src="/assets/clientes/05-corporate-excellence.svg" alt="corporate excellence">
                 </div>
-                <div class="cliente">
+                <div class="cliente" data-aos="zoom-in-up">
                     <img src="/assets/clientes/06-bmi.svg" alt="bmi">
                 </div>
-                <div class="cliente">
+                <div class="cliente" data-aos="zoom-in-up">
                     <img src="/assets/clientes/07-brita.svg" alt="brita">
                 </div>
-                <div class="cliente">
+                <div class="cliente" data-aos="zoom-in-up">
                     <img src="/assets/clientes/08-cajamar.svg" alt="Cajamar">
                 </div>
-                <div class="cliente">
+                <div class="cliente" data-aos="zoom-in-up">
                     <img src="/assets/clientes/09-cespa.svg" alt="Cespa">
                 </div>
-                <div class="cliente">
+                <div class="cliente" data-aos="zoom-in-up">
                     <img src="/assets/clientes/10-schneider-electric.svg" alt="schneider electric">
                 </div>
-                <div class="cliente">
+                <div class="cliente" data-aos="zoom-in-up">
                     <img src="/assets/clientes/11-hill-knowlton.svg" alt="hill knowlton">
                 </div>
-                <div class="cliente">
+                <div class="cliente" data-aos="zoom-in-up">
                     <img src="/assets/clientes/12-broseta.svg" alt="broseta">
                 </div>
             </div>
@@ -166,7 +168,7 @@
         <section id="contacto">
             <h2 class="title">Envianos un mensaje</h2>
             <form id="formulario_contacto">
-                <div class="column">
+                <div class="column" data-aos="fade-right">
                     <input class="white-input" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
                     <input class="white-input" type="email" name="email" id="email" placeholder="Email" required>
                     <input class="white-input" type="tel" name="phone" id="phone" placeholder="Teléfono" required>
@@ -174,7 +176,7 @@
                     <textarea class="white-input" name="subject" id="subject" placeholder="Asunto" rows="10" required></textarea>
                     <p>Sus datos serán tratados por IMPACTA para la atención de las consultas o solicitudes de información realizadas. Puede ejercer sus derechos conforme a lo dispuesto en la Política de Privacidad. Más información aquí.</p>
                 </div>
-                <div class="column">
+                <div class="column" data-aos="fade-left">
                     <h3 class="subtitle">Selecciona solo <strong>un resultado</strong></h3>
                     <label class="radio-label" for="radio1">
                         <input type="radio" name="radio" id="radio1" value="radio1" required>
@@ -274,7 +276,11 @@
         </section>
     </footer>
 
+    <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
     <script src="./script.js"></script>
 </body>
 </html>
