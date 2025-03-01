@@ -163,7 +163,51 @@
                 </div>
             </div>
         </section>
-        <section id="contacto"></section>
+        <section id="contacto">
+            <h2 class="title">Envianos un mensaje</h2>
+            <form id="formulario_contacto">
+                <div class="column">
+                    <input class="white-input" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    <input class="white-input" type="email" name="email" id="email" placeholder="Email" required>
+                    <input class="white-input" type="tel" name="phone" id="phone" placeholder="Teléfono" required>
+                    <input class="white-input" type="text" name="planet_of_birth" id="planet_of_birth" placeholder="Planeta de nacimiento">
+                    <textarea class="white-input" name="subject" id="subject" placeholder="Asunto" rows="10" required></textarea>
+                    <p>Sus datos serán tratados por IMPACTA para la atención de las consultas o solicitudes de información realizadas. Puede ejercer sus derechos conforme a lo dispuesto en la Política de Privacidad. Más información aquí.</p>
+                </div>
+                <div class="column">
+                    <h3 class="subtitle">Selecciona solo <strong>un resultado</strong></h3>
+                    <label class="radio-label" for="radio1">
+                        <input type="radio" name="radio" id="radio1" value="radio1" required>
+                        <span class="checkmark"></span>
+                        <span class="label">Quiero ser feliz</span>
+                    </label>
+                    <label class="radio-label" for="radio2">
+                        <input type="radio" name="radio" id="radio2" value="radio2" required>
+                        <span class="checkmark"></span>
+                        <span class="label">Quiero ser rico</span>
+                    </label>
+                    <label class="radio-label" for="radio3">
+                        <input type="radio" name="radio" id="radio3" value="radio3" required>
+                        <span class="checkmark"></span>
+                        <span class="label">Quiero ser un avión</span>
+                    </label>
+                    <label class="radio-label" for="radio4">
+                        <input type="radio" name="radio" id="radio4" value="radio4" required>
+                        <span class="checkmark"></span>
+                        <span class="label">Quiero dormir todo el día</span>
+                    </label>
+                    <div class="spacer"></div>
+                    <div class="wrapper">
+                        <label class="checkbox-label" for="acceptance">
+                            <input type="checkbox" name="acceptance" id="acceptance" value="1" required>
+                            <span class="checkmark"></span>
+                            <span class="label">He leído y acepto el <a href="#"><strong>aviso legal</strong></a> y la <a href="#"><strong>política de privacidad</strong></a></span>
+                        </label>
+                        <button type="submit">Enviar mensaje</button>
+                    </div>
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <section id="prefooter"></section>

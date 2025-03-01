@@ -283,6 +283,160 @@ body {
                 }
             }
         }
+
+        #contacto {
+            background-color: $secondary-color;
+            padding: 2rem;
+
+            .title {
+                color: $white-color;
+                font-size: 2rem;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            form {
+                .column {
+                    display: grid;
+                    gap: 1rem;
+                    
+                    input,
+                    textarea {
+                        padding: 1rem;
+                        color: $secondary-color;
+                    }
+
+                    input::placeholder,
+                    textarea::placeholder {
+                        color: $secondary-color;
+                    }
+                    
+                    .white-input {
+                        background-color: $white-color;
+                        border: none;
+                        border-radius: 5px;
+                    }
+
+                    p {
+                        color: $white-color;
+                        margin: 1rem auto;
+                        font-weight: 300;
+                    }
+
+                    .subtitle {
+                        color: $white-color;
+                        text-transform: uppercase;
+                    }
+
+                    .radio-label,
+                    .checkbox-label {
+                        display: block;
+                        position: relative;
+                        padding-left: 50px;
+                        margin-bottom: 12px;
+                        cursor: pointer;
+                        font-size: 22px;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        
+                        input {
+                            position: absolute;
+                            opacity: 0;
+                            cursor: pointer;
+                            height: 0;
+                            width: 0;
+                        }
+
+                        .checkmark {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 35px;
+                            width: 35px;
+                            border-radius: 30px;
+                            border: 1px solid $white-color;
+                        }
+
+                        input:checked ~ .checkmark {
+                            background-color: $blue-color;
+                        }
+
+                        .checkmark:after {
+                            content: "";
+                            position: absolute;
+                            display: none;
+                        }
+
+                        input:checked ~ .checkmark:after {
+                            display: block;
+                        }
+
+                        .checkmark:after {
+                            left: 13px;
+                            top: 10px;
+                            width: 5px;
+                            height: 10px;
+                            border: solid white;
+                            border-width: 0 3px 3px 0;
+                            -webkit-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                        }
+
+                        .label {
+                            border: 1px solid #fff;
+                            border-radius: 15px;
+                            padding: 0.5rem;
+                            color: #fff;
+                            font-size: 1rem;
+                            display: inline-block;
+                            width: calc(100% - 17px);
+                        }
+                    }
+
+                    .spacer {
+                        height: 4rem;
+                    }
+
+                    .wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+
+                        .checkbox-label {
+                            .checkmark {
+                                border-radius: 5px;
+                                background-color: $white-color;
+                            }
+    
+                            .label {
+                                border: none;
+                                padding: 0;
+                                font-weight: 300;
+    
+                                a {
+                                    color: $white-color;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+    
+                        button[type="submit"] {
+                            background-color: #fecf1f;
+                            color: $secondary-color;
+                            text-transform: uppercase;
+                            border: none;
+                            padding: 1rem;
+                            border-radius: 20px;
+                            cursor: pointer;
+                        }
+                    }
+
+                }
+            }
+        }
     }
 
     @media (min-width: 768px) {
@@ -419,6 +573,58 @@ body {
                         width: 100%;
                         height: 100%;
                         padding: 0;
+                    }
+                }
+            }
+
+            #contacto {
+                .title {
+                    max-width: 1200px;
+                    margin: 2rem auto;
+                }
+
+                form {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    column-gap: 4rem;
+                    max-width: 1200px;
+                    margin: 0 auto;
+
+                    .column:first-child {
+                        display: flex;
+                        flex-wrap: wrap;
+                        height: fit-content;
+
+                        input[type="text"],
+                        input[type="email"],
+                        input[type="tel"] {
+                            width: calc(50% - 40px);
+                            height: fit-content;
+                        }
+
+                        textarea {
+                            width: 100%;
+                        }
+                    }
+
+                    .column:last-child {
+                        .wrapper {
+                            flex-direction: row;
+
+                            .checkbox-label {
+                                max-width: 50%;
+
+                                .label {
+                                    font-size: 0.9rem;
+                                }
+                            }
+
+                            button[type="submit"] {
+                                max-width: 50%;
+                                width: 100%;
+                                height: fit-content;
+                            }
+                        }
                     }
                 }
             }
