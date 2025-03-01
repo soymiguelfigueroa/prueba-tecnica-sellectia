@@ -39,3 +39,10 @@ Para comenzar con el proyecto, sigue estos pasos:
 
 4. Inicia la aplicación:
    Para ver la aplicación, ingresa a [http://localhost/](http://localhost/) desde tu navegador
+
+## Decisiones tomadas
+- **Movile first**: Sl proyecto fue elaborado pensando en que los dispositivos principales hoy en día son los teléfonos, por lo que la estructura y el estilo fue confexionado para pantallas pequeñas y se fue ajustando a pantallas más grandes por medio de media queries
+- **Menú**: Si bien el menú suele encapsularse en un desplegable para pantallas pequeñas, decidí mantenerlo como un menú horizontal porque se adapta bien a pantallas pequeñas ya que tiene pocos elementos. Los enlaces del menú dirigen a las diferentes secciones de la página (estilo SPA)
+- **Archivos svg**: Algunos archivos svg fueron duplicados y editados para cambiar el color del atributo stroke o fill en favor de tener las variantes solicitadas en el diseño
+- **Secciones con anchos máximos**: Para mantener la integridad del diseño en pantallas grandes, se decidió colocar un max-width a algunas secciones para evitar distorsiones en los elementos
+- **Responsive**: Se utilizaron los anchos de 768px y 1200px como breakpoints claves en la adaptación del diseño a pantallas mediana y grandes
