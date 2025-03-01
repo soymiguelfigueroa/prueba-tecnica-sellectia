@@ -91,7 +91,7 @@ body {
                 }
             }
 
-            #social {
+            .social {
                 margin: 0.5rem 0;
 
                 a {
@@ -462,6 +462,74 @@ body {
                 }
             }
         }
+
+        #footer {
+            background-color: $blue-color;
+            padding: 2rem;
+
+            .column {
+                h2 {
+                    color: $secondary-color;
+                }
+
+                p {
+                    margin-bottom: 0.5rem;
+                    
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                        font-size: 0.9rem;
+                    }
+                }
+
+                #pago-seguro {
+                    color: $white-color;
+                }
+
+                #metodos-pago {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 0.5rem;
+                    max-width: 200px;
+                }
+
+                ul {
+                    list-style: none;
+                    padding: 0;
+
+                    li {
+                        margin-bottom: 0.5rem;
+
+                        a {
+                            color: $white-color;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .social {
+                    margin: 0.5rem 0;
+    
+                    a {
+                        margin-right: 0.5rem;
+                        text-decoration: none;
+    
+                        img {
+                            width: 100%;
+                            max-width: 25px;
+                        }
+                    }
+    
+                    a:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                #logo-footer {
+                    margin: 1rem 0;
+                }
+            }
+        }
     }
 
     @media (min-width: 768px) {
@@ -562,6 +630,16 @@ body {
                     }
                 }
             }
+
+            #footer {
+                #logo-footer {
+                    text-align: right;
+    
+                    img {
+                        max-width: 200px;
+                    }
+                }
+            }
         }
     }
 
@@ -569,11 +647,11 @@ body {
         header {
             #header>#logo,
             #header>nav,
-            #header>#social {
+            #header>.social {
                 width: 33.3333%;
             }
 
-            #header>#social {
+            #header>.social {
                 text-align: right;
             }
         }
@@ -667,6 +745,30 @@ body {
                                 height: fit-content;
                             }
                         }
+                    }
+                }
+            }
+        }
+
+        footer {
+            #footer {
+                padding: 1rem 4rem;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+
+                .column {
+                    .spacer {
+                        height: 2rem;
+                    }
+                }
+
+                .column:last-child {
+                    .spacer {
+                        height: 4rem;
+                    }
+
+                    #logo-footer {
+                        margin-top: 2rem;
                     }
                 }
             }

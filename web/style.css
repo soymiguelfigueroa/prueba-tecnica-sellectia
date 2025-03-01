@@ -69,18 +69,18 @@ body header #header nav ul li a:hover {
 body header #header nav ul li:last-child {
   margin-right: 0;
 }
-body header #header #social {
+body header #header .social {
   margin: 0.5rem 0;
 }
-body header #header #social a {
+body header #header .social a {
   margin-right: 0.5rem;
   text-decoration: none;
 }
-body header #header #social a img {
+body header #header .social a img {
   width: 100%;
   max-width: 25px;
 }
-body header #header #social a:last-child {
+body header #header .social a:last-child {
   margin-right: 0;
 }
 body main #slider .swiper {
@@ -379,6 +379,58 @@ body footer #prefooter p a {
   text-decoration: underline;
   text-transform: capitalize;
 }
+body footer #footer {
+  background-color: #001c39;
+  padding: 2rem;
+}
+body footer #footer .column h2 {
+  color: #e2001a;
+}
+body footer #footer .column p {
+  margin-bottom: 0.5rem;
+}
+body footer #footer .column p a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+body footer #footer .column #pago-seguro {
+  color: #fff;
+}
+body footer #footer .column #metodos-pago {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  max-width: 200px;
+}
+body footer #footer .column ul {
+  list-style: none;
+  padding: 0;
+}
+body footer #footer .column ul li {
+  margin-bottom: 0.5rem;
+}
+body footer #footer .column ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+body footer #footer .column .social {
+  margin: 0.5rem 0;
+}
+body footer #footer .column .social a {
+  margin-right: 0.5rem;
+  text-decoration: none;
+}
+body footer #footer .column .social a img {
+  width: 100%;
+  max-width: 25px;
+}
+body footer #footer .column .social a:last-child {
+  margin-right: 0;
+}
+body footer #footer .column #logo-footer {
+  margin: 1rem 0;
+}
 @media (min-width: 768px) {
   body header #preheader p {
     flex-direction: row;
@@ -442,14 +494,20 @@ body footer #prefooter p a {
     margin-right: 0.5rem;
     margin-bottom: 0;
   }
+  body footer #footer #logo-footer {
+    text-align: right;
+  }
+  body footer #footer #logo-footer img {
+    max-width: 200px;
+  }
 }
 @media (min-width: 1200px) {
   body header #header > #logo,
   body header #header > nav,
-  body header #header > #social {
+  body header #header > .social {
     width: 33.3333%;
   }
-  body header #header > #social {
+  body header #header > .social {
     text-align: right;
   }
   body main #slider .swiper .swiper-slide .content {
@@ -515,6 +573,20 @@ body footer #prefooter p a {
     max-width: 50%;
     width: 100%;
     height: fit-content;
+  }
+  body footer #footer {
+    padding: 1rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  body footer #footer .column .spacer {
+    height: 2rem;
+  }
+  body footer #footer .column:last-child .spacer {
+    height: 4rem;
+  }
+  body footer #footer .column:last-child #logo-footer {
+    margin-top: 2rem;
   }
 }
 
