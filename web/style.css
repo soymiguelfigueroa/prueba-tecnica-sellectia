@@ -127,6 +127,50 @@ body main #scrolldown a img {
   width: 100%;
   max-width: 50px;
 }
+body main #nosotros {
+  padding: 2rem;
+}
+body main #nosotros article {
+  margin-bottom: 2rem;
+}
+body main #nosotros article .nosotros-wrapper_image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  border-radius: 5px;
+}
+body main #nosotros article .nosotros-wrapper_image .overlay {
+  background: rgba(226, 0, 26, 0.5);
+  height: 100%;
+  border-radius: 5px;
+  text-align: center;
+}
+body main #nosotros article .nosotros-wrapper_image .overlay img {
+  width: 100%;
+  height: 100%;
+  max-width: 150px;
+}
+body main #nosotros article .number {
+  background: #fff;
+  width: max-content;
+  padding: 1rem 1.5rem;
+  border-radius: 30px;
+  position: relative;
+  bottom: 30px;
+  color: #e2001a;
+  font-weight: bold;
+}
+body main #nosotros article .title {
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+body main #nosotros article .description {
+  color: #000;
+  font-weight: 300;
+}
 @media (min-width: 768px) {
   body header #preheader p {
     flex-direction: row;
@@ -153,6 +197,11 @@ body main #scrolldown a img {
     width: 15px;
     height: 15px;
   }
+  body main #nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
 }
 @media (min-width: 1200px) {
   body header #header > #logo,
@@ -168,6 +217,10 @@ body main #scrolldown a img {
   }
   body main #slider .swiper .swiper-slide .content h2 {
     max-width: 20%;
+  }
+  body main #nosotros {
+    max-width: 1024px;
+    margin: 0 auto;
   }
 }
 
