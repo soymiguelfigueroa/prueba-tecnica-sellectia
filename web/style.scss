@@ -440,7 +440,8 @@ body {
     }
 
     footer {
-        #prefooter {
+        #prefooter,
+        #postfooter {
             background-color: $white-color;
 
             p {
